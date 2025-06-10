@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oshan Khati - Portfolio</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans relative">
+
+  <!-- Toggle Sidebar Button (Mobile only) -->
+  <div class="md:hidden fixed top-4 left-4 z-50">
+    <button id="toggleSidebar" class="text-white text-3xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="w-64 min-h-screen bg-gray-800 px-6 py-8 fixed transform -translate-x-full md:translate-x-0 md:block transition-transform duration-300 ease-in-out z-40">
+    <h2 class="text-2xl font-bold mb-8 text-indigo-400">Dashboard</h2>
+    <nav class="space-y-4">
+      <a href="index.html" class="block px-4 py-2 rounded hover:bg-indigo-500 nav-link">Home</a>
+      <a href="project.html" class="block px-4 py-2 rounded hover:bg-indigo-500 nav-link">Projects</a>
+      <a href="education.html" class="block px-4 py-2 rounded hover:bg-indigo-500 nav-link">Education</a>
+      <a href="achivements.html" class="block px-4 py-2 rounded hover:bg-indigo-500 nav-link">Achievements</a>
+      <a href="#contact" class="block px-4 py-2 rounded hover:bg-indigo-500 nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex-1 ml-0 md:ml-64 transition-all">
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center px-4 text-center overflow-hidden">
+      <!-- Blurred Background -->
+      <div class="absolute inset-0">
+        <img src="/images/O_background.jpg" alt="Background" class="w-full h-full object-cover blur-md scale-110" />
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      </div>
+      <!-- Foreground Content -->
+      <div class="relative z-10 text-white">
+        <img src="/images/OSHAN.jpg" alt="Oshan Khati" class="w-40 h-40 rounded-full mb-6 border-4 border-indigo-500 shadow-lg mx-auto" />
+        <h1 class="text-5xl font-bold mb-4">Hi, I'm <span class="text-indigo-400">Oshan Khati</span></h1>
+        <p class="text-xl mb-6">Frontend Developer | UI/UX Enthusiast</p>
+        <a href="project.html" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full text-lg transition duration-300 transform hover:scale-105">View Projects</a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 bg-gray-800" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 text-center">All Projects</h2>
+      <div class="flex justify-center">
+        <a href="project.html" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full text-lg transition duration-300 transform hover:scale-105">View Projects</a>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 px-6" data-aos="fade-right">
+      <h2 class="text-3xl font-bold text-center mb-4">Education</h2>
+      <div class="flex justify-center">
+        <a href="education.html" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full text-lg transition duration-300 transform hover:scale-105">View Education</a>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-16 px-6 bg-gray-800" data-aos="fade-left">
+      <h2 class="text-3xl font-bold text-center mb-4">Achievements</h2>
+      <div class="flex justify-center">
+        <a href="achivements.html" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full text-lg transition duration-300 transform hover:scale-105">View Achievements</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 max-w-6xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center mb-12 text-indigo-400">Contact Me</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <!-- GitHub -->
+        <div class="bg-gray-800 w-64 rounded-lg shadow-lg hover:shadow-indigo-500 transform hover:scale-105 transition text-center p-6">
+          <img src="../images/github.png" alt="GitHub" class="w-16 h-16 mx-auto mb-4 rounded-full object-cover" />
+          <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+          <a href="https://github.com/Oshankhati" target="_blank" class="text-indigo-400 hover:underline text-sm">Visit Profile</a>
+        </div>
+        <!-- Instagram -->
+        <div class="bg-gray-800 w-64 rounded-lg shadow-lg hover:shadow-indigo-500 transform hover:scale-105 transition text-center p-6">
+          <img src="../images/insta.png" alt="Instagram" class="w-16 h-16 mx-auto mb-4 rounded-full object-cover" />
+          <h3 class="text-xl font-semibold mb-2">Instagram</h3>
+          <a href="https://www.instagram.com/oshan_khati/" target="_blank" class="text-indigo-400 hover:underline text-sm">Visit Profile</a>
+        </div>
+        <!-- LinkedIn -->
+        <div class="bg-gray-800 w-64 rounded-lg shadow-lg hover:shadow-indigo-500 transform hover:scale-105 transition text-center p-6">
+          <img src="../images/linkedin.png" alt="LinkedIn" class="w-16 h-16 mx-auto mb-4 rounded-full object-cover" />
+          <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/oshan-khati-973932302/" target="_blank" class="text-indigo-400 hover:underline text-sm">Visit Profile</a>
+        </div>
+        <!-- Whatsapp -->
+        <div class="bg-gray-800 w-64 rounded-lg shadow-lg hover:shadow-indigo-500 transform hover:scale-105 transition text-center p-6">
+          <img src="../images/whatsapp.png" alt="Whatsapp" class="w-16 h-16 mx-auto mb-4 rounded-full object-cover" />
+          <h3 class="text-xl font-semibold mb-2">Whatsapp no. - +91-7205481995</h3>
+          <!-- <a href="#" class="text-indigo-400 hover:underline text-sm">Visit Profile</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-gray-900 text-center border-t border-gray-700">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" class="text-gray-400 hover:text-indigo-500 text-xl"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-gray-400 hover:text-indigo-500 text-xl"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-gray-400 hover:text-indigo-500 text-xl"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="text-gray-500">© 2025 Oshan Khati. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Sidebar Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById("toggleSidebar");
+    const sidebar = document.getElementById("sidebar");
+
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("-translate-x-full");
+    });
+
+    // Optional: Highlight nav link based on scroll
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    function activateLink() {
+      let currentSection = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("bg-indigo-500");
+        if (link.getAttribute("href").includes(currentSection)) {
+          link.classList.add("bg-indigo-500");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", activateLink);
+  </script>
+</body>
+</html>

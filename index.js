@@ -27,5 +27,5 @@ app.get('/achivements', (req, res) => {
 
 
 app.listen(port, () => {
-  console.log(`Digi-Dine listening on http://localhost:${port}`);
+  console.log(`Website listening on http://localhost:${port}`);
 });
